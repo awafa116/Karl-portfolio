@@ -1,0 +1,145 @@
+.hero-sec {
+  padding-top: 12rem;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.hero--text .title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin-bottom: 2rem;
+  width: 600px;
+}
+
+.hero--text .subtitle {
+  width: 600px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  opacity: 0.6;
+  margin-bottom: 5rem;
+}
+
+.hero--text .cta-container {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.hero--text .cta-container .secondary-cta {
+  color: var(--black);
+  margin-left: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero--text .cta-container .secondary-cta::before {
+  content: '';
+  height: 2px;
+  width: 0;
+  border-radius: 5px;
+  background-color: var(--orange);
+  position: absolute;
+  bottom: 0.3em;
+  left: 0;
+  transform-origin: left;
+  transition: width 0.5s ease-in-out;
+}
+.hero--text .cta-container .secondary-cta:hover::before {
+  width: 100%;
+}
+
+.hero--text .cta-container .secondary-cta .icon {
+  color: var(--orange);
+  font-size: 1.3em;
+  margin-right: 0.3em;
+}
+
+.hero--img {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  width: 550px;
+  height: fit-content;
+}
+
+/* stats */
+.stats {
+  display: flex;
+  padding: 2.3rem 4rem;
+  padding-left: 15%;
+  /* margin-left: -30rem; */
+  background-color: white;
+  width: fit-content;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
+  /* border: 5px solid var(--black); */
+  border-radius: 0 30px 30px 0;
+}
+.stat {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+.stat:last-child {
+  margin: 0;
+}
+.stat .icon {
+  grid-area: 'icon';
+  color: white;
+  margin-right: 0.5rem;
+  height: 40px;
+  width: 40px;
+  padding: 0.6rem;
+  border-radius: 10px;
+  background-color: var(--orange);
+}
+.stat .count {
+  grid-area: 'count';
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: -0.3em;
+}
+.stat .description {
+  font-size: 16;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* straps */
+.straps {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.strap {
+  width: 2.5rem;
+  border-radius: 0 0 50rem 50rem;
+}
+.strap1 {
+  height: 120vh;
+  background-color: var(--orange-40);
+}
+.strap2 {
+  height: 118vh;
+  background-color: var(--orange-80);
+}
+.strap3 {
+  height: 122vh;
+  background-color: var(--orange);
+}
+.strap4 {
+  height: 117vh;
+  background-color: var(--orange-80);
+}
+.strap5 {
+  height: 118vh;
+  background-color: var(--orange-40);
+}

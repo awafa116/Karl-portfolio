@@ -1,0 +1,73 @@
+.films-sec {
+  margin-bottom: 5rem;
+}
+.films-sec .grid {
+  height: 500px;
+}
+
+.video {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.thumbs {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.swiper-slide {
+  height: fit-content;
+}
+.thumb {
+  width: 95%;
+  height: 240px;
+  border-radius: 30px;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.thumb.playing {
+  box-shadow: inset 0 0 0 3px white, inset 0 0 0 6px var(--black);
+  cursor: default;
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thumb .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: var(--orange);
+  font-size: 2.5rem;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.2em;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+.thumb .icon.playing {
+  background-color: transparent;
+  box-shadow: unset;
+  padding: 0;
+  color: white;
+  text-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}

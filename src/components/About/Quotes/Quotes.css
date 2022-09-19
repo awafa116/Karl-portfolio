@@ -1,0 +1,70 @@
+.quotes-sec {
+  margin-bottom: 10rem;
+  position: relative;
+}
+.quotes {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  position: relative;
+}
+.quotes::before {
+  content: '';
+  border-radius: 10px;
+  width: 98vw;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--orange-40);
+  opacity: 0.5;
+}
+
+.quote {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+.quote.active {
+  display: flex;
+}
+
+.quote .avatar {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 10rem;
+  height: auto;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+.quote .body {
+  font-size: 18px;
+  font-weight: 600;
+  width: 500px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.quote .author {
+  align-self: flex-start;
+}
+
+.quotes .quote-mark {
+  position: absolute;
+  width: 180px;
+  z-index: 1;
+}
+.quotes .quote-mark.left {
+  top: -2rem;
+  left: 0;
+}
+.quotes .quote-mark.right {
+  transform: rotate(180deg);
+  bottom: -2rem;
+  right: 0;
+}

@@ -1,0 +1,79 @@
+nav {
+  height: 8vh;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-out, box-shadow 0.4s ease-out;
+}
+nav.colored {
+  background-color: white;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.08);
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 1.7rem;
+  margin-top: -0.2em;
+}
+
+.nav-links {
+  position: relative;
+  width: fit-content;
+}
+
+.nav-links .link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  margin-right: 2em;
+}
+.nav-links .link:last-child {
+  margin-right: 0;
+}
+.nav-links .link:hover {
+  color: var(--orange);
+}
+
+.nav-cta {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  padding: 0.6em 1em;
+  border: 3px solid var(--black);
+  border-radius: 5px;
+}
+.nav-cta:hover,
+.nav-cta:focus {
+  background-color: var(--black);
+  color: white;
+}
+
+.nav-links .link.active {
+  font-weight: 600;
+  cursor: default;
+}
+.nav-links .link.active:hover {
+  color: var(--black);
+}
+
+.nav-links .index {
+  height: 2px;
+  width: 58px;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  background-color: var(--orange);
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 1s ease-out;
+}

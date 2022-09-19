@@ -1,0 +1,38 @@
+.about-sec {
+  margin-bottom: 10rem;
+}
+
+.about-sec .text {
+  grid-column: 1/3;
+  color: var(--black);
+}
+.about-sec .text .title {
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.about-sec .text .info {
+  font-size: 18px;
+  width: 700px;
+  margin-bottom: 3rem;
+}
+.about-sec .text .skills-lable {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.about-sec .text .skills {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.about-sec .text .skills .skill {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+
+.about-sec img {
+  width: 100%;
+  margin-top: 1rem;
+  justify-self: center;
+}

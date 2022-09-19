@@ -1,0 +1,39 @@
+.services-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.service {
+  width: 100%;
+  padding: 23% 10% 15%;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--orange-20);
+  border-radius: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.service .title {
+  font-size: 23px;
+  margin-bottom: 1.3rem;
+  color: var(--balck);
+  text-transform: capitalize;
+}
+
+.service .info {
+  font-size: 18px;
+  color: var(--balck);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.services-sec .service .img {
+  width: 60%;
+  position: absolute;
+  top: -35%;
+}

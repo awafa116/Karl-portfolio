@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --black: #121212;
+  --orange: #edb048;
+  --orange-20: rgba(237, 176, 72, 0.2);
+  --orange-40: rgba(237, 176, 72, 0.4);
+  --orange-60: rgba(237, 176, 72, 0.6);
+  --orange-80: rgba(237, 176, 72, 0.8);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+/* body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 1300px;
+  height: 1300px;
+  background-color: var(--orange);
+  opacity: 0.05;
+  border-radius: 50%;
+} */
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(1920px * 0.7);
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.sec-title {
+  font-size: 30px;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+  cursor: default;
+}
+.hash {
+  color: var(--orange);
+  opacity: 0.4;
+  margin-right: 0.3em;
+  transition: opacity 0.5s ease-out;
+}
+.sec-title:hover .hash {
+  opacity: 1;
+}
+
+.highlight {
+  line-height: 0.9em;
+  border-radius: 0.1em;
+  display: inline-flex;
+  padding: 0.1em 0.2em;
+  background-color: rgba(237, 176, 72, 0.6);
+}
+
+.primary-cta {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.7em 2em;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--black);
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  transition: all 0.2s ease-out;
+}
+.primary-cta .icon {
+  margin-left: 0.7em;
+}
+.primary-cta:hover,
+.primary-cta:focus {
+  color: var(--orange);
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
