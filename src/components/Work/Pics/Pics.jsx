@@ -1,7 +1,6 @@
 import React from 'react';
 import './Pics.css';
 import data from '../../../data/pics';
-import likeImg from '../../../images/like.png';
 import { MdFullscreen } from 'react-icons/md';
 
 const Pics = () => {
@@ -9,7 +8,7 @@ const Pics = () => {
   const col1 = data.slice(0, 7).map(pic => {
     return (
       <div className='pic'>
-        <img key={pic.id} src={pic.url} />
+        <img key={pic.id} src={pic.thumb} />
         <MdFullscreen className='icon' />
       </div>
     );
@@ -19,7 +18,7 @@ const Pics = () => {
   const col2 = data.slice(7, 14).map(pic => {
     return (
       <div className='pic'>
-        <img key={pic.id} src={pic.url} />
+        <img key={pic.id} src={pic.thumb} />
         <MdFullscreen className='icon' />
       </div>
     );
@@ -35,11 +34,11 @@ const Pics = () => {
             <a href='#' className='primary-cta'>
               give it a try
             </a>
-            <img src={likeImg} alt='thumbs up 3d render' />
+            <img src='img/like.png' alt='thumbs up 3d render' />
           </div>
         )}
         <div className='pic'>
-          <img key={pic.id} src={pic.url} />
+          <img key={pic.id} src={pic.thumb} />
           <MdFullscreen className='icon' />
         </div>
       </>

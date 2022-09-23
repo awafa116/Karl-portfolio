@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import about from '../../images/about.png';
 import Quotes from './Quotes/Quotes';
 import { HiDownload } from 'react-icons/hi';
 
@@ -31,7 +30,7 @@ const About = () => {
               Résumé <HiDownload className='icon' />
             </a>
           </div>
-          <img src={about} alt='portrait of karl hanging a camera aroung his neck' />
+          <img src='img/about.png' alt='portrait of karl hanging a camera aroung his neck' />
         </div>
       </div>
       <Quotes />

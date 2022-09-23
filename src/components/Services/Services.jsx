@@ -1,9 +1,6 @@
 import React from 'react';
 import './Services.css';
 import { BsStars } from 'react-icons/bs';
-import photographyImg from '../../images/photography.png';
-import filmImg from '../../images/filming.png';
-import editImg from '../../images/editing.png';
 
 const Services = () => {
   return (
@@ -19,7 +16,7 @@ const Services = () => {
             <a href='#' className='primary-cta'>
               book a session
             </a>
-            <img src={photographyImg} alt='' className='img' />
+            <img src='img/photography.png' alt='' className='img' />
           </article>
           <article className='service'>
             <h3 className='title'>film making</h3>
@@ -27,7 +24,7 @@ const Services = () => {
             <a href='#' className='primary-cta'>
               book a session
             </a>
-            <img src={filmImg} alt='' className='img' />
+            <img src='img/filming.png' alt='' className='img' />
           </article>
           <article className='service'>
             <h3 className='title'>video editing</h3>
@@ -35,7 +32,7 @@ const Services = () => {
             <a href='#' className='primary-cta'>
               book a session
             </a>
-            <img src={editImg} alt='' className='img' />
+            <img src='img/editing.png' alt='' className='img' />
           </article>
         </div>
       </div>

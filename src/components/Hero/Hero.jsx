@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css';
-import hero from '../../images/hero.png';
 import { AiFillEye, AiOutstrapUser } from 'react-icons/ai';
 import { FaUserFriends, FaImages, FaClock } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
@@ -66,7 +65,7 @@ const Hero = () => {
           <li className='strap strap4'></li>
           <li className='strap strap5'></li>
         </ul>
-        <img src={hero} alt='3d orange camera figure' className='hero--img' />
+        <img src='img/hero.png' alt='3d orange camera figure' className='hero--img' />
       </div>
       <div className='stats'>{statsElements}</div>
     </section>
